@@ -5,7 +5,7 @@
     <xsl:result-document href="README.md" format="MD">
       <xsl:text># RegHub
 
-Manage Protocol Registries in a simple GitHub-based workflow.
+Manage Protocol Registries in a simple GitHub-based workflow. This repository is both the repository for RegHub itself, as well as [the registry for RegHub field types. Registered RegHub field types](field-types) are fields that have a well-defined global meaning when using RegHub. RegHub allows extension fields as well, but for these, their meaning depends on the context where they are used.
 
 </xsl:text>
     </xsl:result-document>
