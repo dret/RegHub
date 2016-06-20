@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<registry>
+<registry xmlns="https://github.com/dret/RegHub">
   <name>RegHub Field Types</name>
   <description>This registry lists the field types that are registered for RegHub registries. RegHub registries can use any fields that registry maintainers deem useful, but only those registered in the RegHub field type registry have a well-defined meaning that goes beyond a single registry.</description>
 </registry>
