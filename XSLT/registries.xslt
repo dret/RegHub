@@ -10,6 +10,20 @@ RegHub is designed to manage protocol registries in a simple GitHub-based workfl
 For more information about what RegHub is and how to use it, please refer to the [RegHub overview](overview.md).
 
 </xsl:text>
+      <xsl:text>## Registries
+
+The following registries are maintained in this repository:
+
+</xsl:text>
+      <xsl:for-each select="registry">
+        <xsl:variable name="registry" select="doc(concat('../', @id, '/registry.xml'))"/>
+        <xsl:text>* [</xsl:text>
+        <xsl:value-of select="$registry/registry/name/text()"/>
+        <xsl:text>](</xsl:text>
+        <xsl:value-of select="@id"/>
+        <xsl:text>)&#xa;</xsl:text>
+      </xsl:for-each>
+      <xsl:text>&#xa;</xsl:text>
     </xsl:result-document>
   </xsl:template>
 </xsl:stylesheet>
