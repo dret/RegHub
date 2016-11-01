@@ -4,9 +4,11 @@ RegMan is designed to manage protocol registries in a simple GitHub-based workfl
 
 For more information about what RegMan is and how to use it, please refer to the [RegMan overview](overview.md).
 
+For more information about when using registries might be a good idea, please refer to this [Internet draft about "The Use of Registries"](https://tools.ietf.org/html/draft-wilde-registries).
+
+
 ## Registries
 
 The following registries are maintained in this repository:
 
 * [RegMan Field Types](field-types)
-
