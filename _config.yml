@@ -26,3 +26,6 @@ github_username:  dret
 # Build settings
 markdown: kramdown
 theme: minima
+
+# Exclude instructions and templates]
+exclude: [ XSLT , submissions ]
