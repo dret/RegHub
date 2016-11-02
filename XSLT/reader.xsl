@@ -28,10 +28,13 @@
           </xsl:message>
         </xsl:if>
       </xsl:for-each>
-      <xsl:variable name="subdate" select="/submission/@date"/>
+      <xsl:variable name="subdate" select="$submission/@date"/>
       <xsl:result-document href="../_posts/{format-number(year-from-dateTime($subdate), '0000')}-{format-number(month-from-dateTime($subdate), '00')}-{format-number(day-from-dateTime($subdate), '00')}-submission.md" method="text">
         <xsl:text>---&#xa;</xsl:text>
         <xsl:text>layout: submission&#xa;</xsl:text>
+        <xsl:text>registry: </xsl:text>
+        <xsl:value-of select="$submission/@registry"/>
+        <xsl:text>&#xa;</xsl:text>
         <xsl:text>---&#xa;</xsl:text>
       </xsl:result-document>
     </xsl:for-each>
