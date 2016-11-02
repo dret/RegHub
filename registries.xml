@@ -1,0 +1,5 @@
+<registries>
+  <registry id="xpointer-schemes">
+    <field id="description" occurrence="mandatory"/>
+  </registry>
+</registries>
