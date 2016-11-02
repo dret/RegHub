@@ -1,5 +1,6 @@
 <registries>
   <registry id="xpointer-schemes">
+    <field id="submitter" occurrence="optional"/>
     <field id="description" occurrence="mandatory"/>
   </registry>
 </registries>
