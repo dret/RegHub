@@ -6,9 +6,4 @@ For more information about what RegMan is and how to use it, please refer to the
 
 For more information about when using registries might be a good idea, please refer to this [Internet draft about "The Use of Registries"](https://tools.ietf.org/html/draft-wilde-registries).
 
-
-## Registries
-
-The following registries are maintained in this repository:
-
-* [RegMan Field Types](field-types)
+For some inspiration on where registries might be useful in ongoing work, please refer to this [list of W3C specifications that could and maybe should be using registries](W3C.md).
