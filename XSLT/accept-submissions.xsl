@@ -14,6 +14,13 @@
         <xsl:when test="empty(/submission/@registry)">
           <xsl:message terminate="no">No "registry" attribute on element "submission"</xsl:message>
         </xsl:when>
+        <xsl:when test="empty($registries/registry[@id eq current()/submission/@registry])">
+          <xsl:message terminate="no">
+            <xsl:text>No such registry: "</xsl:text>
+            <xsl:value-of select="/submission/@registry"/>
+            <xsl:text>"</xsl:text>
+          </xsl:message>
+        </xsl:when>
         <xsl:when test="empty(/submission/value)">
           <xsl:message terminate="no">No "value" child element of element "submission"</xsl:message>
         </xsl:when>
