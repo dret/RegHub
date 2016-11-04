@@ -14,6 +14,9 @@
         <xsl:when test="empty(/submission/@registry)">
           <xsl:message terminate="no">No "registry" attribute on element "submission"</xsl:message>
         </xsl:when>
+        <xsl:when test="empty(/submission/value)">
+          <xsl:message terminate="no">No "value" child element of element "submission"</xsl:message>
+        </xsl:when>
       </xsl:choose>
       <xsl:variable name="submission" select="/submission"/>
       <!-- testing if all fields are defined in the registry. -->
