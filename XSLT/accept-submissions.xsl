@@ -5,9 +5,11 @@
     <xsl:for-each select="collection('../submissions/')">
       <xsl:choose>
         <xsl:when test="empty(/submission)">
-          <xsl:message terminate="no">No document element "submission" (found "</xsl:message>
-          <xsl:value-of select="local-name(/*)"/>
-          <xsl:message terminate="no">" instead)</xsl:message>
+          <xsl:message terminate="no">
+            <xsl:text>No document element "submission" (found "</xsl:text>
+            <xsl:value-of select="local-name(/*)"/>
+            <xsl:text>" instead)</xsl:text>
+          </xsl:message>
         </xsl:when>
       </xsl:choose>
       <xsl:variable name="submission" select="/submission"/>
