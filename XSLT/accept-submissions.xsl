@@ -3,6 +3,13 @@
   <xsl:variable name="registries" select="doc('../registries.xml')/registries"/>
   <xsl:template match="/">
     <xsl:for-each select="collection('../submissions/')">
+      <xsl:choose>
+        <xsl:when test="empty(/submission)">
+          <xsl:message terminate="no">No document element "submission" (found "</xsl:message>
+          <xsl:value-of select="local-name(/*)"/>
+          <xsl:message terminate="no">" instead)</xsl:message>
+        </xsl:when>
+      </xsl:choose>
       <xsl:variable name="submission" select="/submission"/>
       <!-- testing if all fields are defined in the registry. -->
       <xsl:for-each select="$submission/*[not(local-name() eq 'value')]">
