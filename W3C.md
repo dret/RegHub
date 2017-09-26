@@ -14,6 +14,7 @@ A short list of W3C-managed value spaces that probably could be more effectively
 * [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/) [`entryType`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry-entrytype) (integral part of the specification)
 * [Basic Card Payment](https://www.w3.org/TR/payment-method-basic-card/) (managed as a WD)
 * [Payment Method Identifiers](https://www.w3.org/TR/payment-method-id/) (managed as a WD)
+* [Permissions](https://www.w3.org/TR/permissions/) [Permission Registry](https://www.w3.org/TR/permissions/#permission-registry) (integral part of the specification)
 
 
 ## Stable Specifications
