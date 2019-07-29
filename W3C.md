@@ -16,6 +16,7 @@ A short list of W3C-managed value spaces that probably could be more effectively
 * [Payment Method Identifiers](https://www.w3.org/TR/payment-method-id/) (managed as a WD)
 * [Permissions](https://www.w3.org/TR/permissions/) [Permission Registry](https://www.w3.org/TR/permissions/#permission-registry) (integral part of the specification)
 * [Trace Context Protocols Registry](https://www.w3.org/TR/trace-context-protocols-registry/) (managed as a NOTE)
+* [Timing Entry Names Registry](https://www.w3.org/TR/timing-entrytypes-registry/) (managed as a WD)
 
 
 ## Stable Specifications
